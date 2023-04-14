@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/ico" href="IMAGE/favicon.ico"/>
+    <title>Settings</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/settings_style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gajraj One">
+</head>
+<body id="body">
+
+    <div id="flex-container">
+        <div id="box-container">
+            <div class="box1">
+                <i class="fa-solid fa-arrow-left" onclick="history.back()"></i>
+            </div>
+            <div class="box2">
+                <h1 id="h1">GRAB A BYTE</h1>
+            </div>
+        </div>
+    </div>    
+    
+    <h2>THEME</h2>
+
+    <div id="dm-toggle-switch">
+        <label class="switch">
+            <input id="toggle-mode-btn" type="checkbox">
+            <span class="slider">
+            </span>
+        </label>
+
+    </div>
+
+
+    <script>
+
+        var toggleSwitch = document.getElementById('toggle-mode-btn');
+        // Define the mode object
+        const mode = {
+            dark: {
+                bgColor: "black",
+                textColor: "white" 
+            },
+            light: {
+                bgColor: "white",
+                textColor: "black"
+            }
+        };
+
+        // Check if the mode setting is stored in local storage
+        if (localStorage.getItem("mode") === "dark") {
+            setMode("dark");
+            toggleSwitch.checked = true;
+        } else {
+            setMode("light");
+            toggleSwitch.checked = false;
+        }
+
+        // Function to set the mode
+        function setMode(modeName) {
+            // Set the body background color and text color based on the mode
+            document.body.style.backgroundColor = mode[modeName].bgColor;
+            document.body.style.color = mode[modeName].textColor;
+
+            // Store the mode setting in local storage
+            localStorage.setItem("mode", modeName);
+        }
+
+        // Add event listener to toggle the mode on button click
+        document.getElementById("toggle-mode-btn").addEventListener("click", function() {
+            if (localStorage.getItem("mode") === "dark") {
+                setMode("light");
+            } else {
+                setMode("dark");
+            }
+        
+        // Add mode parameter to link to other page
+        const currentUrl = new URL(window.location.href);
+        const otherPageLink = document.getElementById("index.html");
+        otherPageLink.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
+        const otherPageLink2 = document.getElementById("classicCheese.html");
+        otherPageLink2.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
+        const otherPageLink3 = document.getElementById("banginBBQ.html");
+        otherPageLink3.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
+        const otherPageLink4 = document.getElementById("crispyChicken.html");
+        otherPageLink4.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
+        const otherPageLink5 = document.getElementById("plantPowered.html");
+        otherPageLink5.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
+        const otherPageLink6 = document.getElementById("inferno.html");
+        otherPageLink6.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
+        const otherPageLink7 = document.getElementById("mediterranean.html");
+        otherPageLink7.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
+        });
+    </script>
+</body>
+</html>

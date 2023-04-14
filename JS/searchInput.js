@@ -16,22 +16,22 @@ function checkKeyword() {
     var keywords_mediterranean = ["mediterranean", "greek", "lamb", "Hummus", "sweetcorn", "zucchini"];
     
     if (keywords_cheese.includes(input)) {
-        window.location.href = "https://cam1906.github.io/SET08101/ClassicCheese.html";
+        window.location.href = "classicCheese.html";
     }
     else if (keywords_bbq.includes(input)) {
-        window.location.href = "https://cam1906.github.io/SET08101/BanginBBQ.html";
+        window.location.href = "banginBBQ.html";
     }
     else if (keywords_chicken.includes(input)) {
-        window.location.href = "https://cam1906.github.io/SET08101/CrispyChicken.html";
+        window.location.href = "crispyChicken.html";
     }
     else if (keywords_plant.includes(input)) {
-        window.location.href = "https://cam1906.github.io/SET08101/PlantPowered.html";
+        window.location.href = "plantPowered.html";
     }
     else if (keywords_inferno.includes(input)) {
-        window.location.href = "https://cam1906.github.io/SET08101/Inferno.html";
+        window.location.href = "inferno.html";
     }
     else if (keywords_mediterranean.includes(input)) {
-        window.location.href = "https://cam1906.github.io/SET08101/Mediterranean.html";
+        window.location.href = "mediterranean.html";
     } 
     else {
         alert("No match found");

@@ -2,39 +2,35 @@
 <html>
   <head>
     <link rel="icon" type="image/ico" href="IMAGE/favicon.ico"/>
-    <title>GRAB A BYTE | HOME</title>
+    <title>GRAB A BYTE | CRISPY CHICKEN</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/snap.svg/0.5.1/snap.svg-min.js"></script>
-    <link rel="stylesheet" type="text/css" href="CSS/home_style_default.css">
-    <link id="pagestyle" rel="stylesheet" type="text/css" href="CSS/home_style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/recipe_style_default.css">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="CSS/recipe_style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gajraj One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
     <script src="JS/searchBar.js"></script>
     <script>
-        function darkMode(){
-          if (localStorage.getItem("mode") === "dark") {
-              document.getElementById('pagestyle').setAttribute('href', 'CSS/home_darkmode.css');
-              console.log("Dark Mode")
-              scrollDM();
-          }
-
-          else {
-              document.getElementById('pagestyle').setAttribute('href', 'CSS/home_style.css');
-              console.log("Light Mode")
-              scroll();
-          }
+      function darkMode(){  
+        if (localStorage.getItem("mode") === "dark") {
+          document.getElementById('pagestyle').setAttribute('href', 'CSS/recipe_style_darkmode.css');
         }
-    </script>
+
+        else {
+          document.getElementById('pagestyle').setAttribute('href', 'CSS/recipe_style.css'); 
+        }
+      }
+    </script>     
   </head>
 <body id="body" onload="darkMode()">
 
 <div id="flex-container">
   <div id="box-container">
     <div class="box1">
-      <a href="#" class="burgericon" id="burgericon" onclick="burgerClickSelector()">
+      <a href="#" class="burgericon" id="burgericon" onclick="myFunction()">
         <i class="fa-solid fa-burger fa-2x"></i>
       </a>
     </div>
@@ -63,23 +59,70 @@
     </div>
   </div>
   <div id="myLinks">
+    <a href="index.html">HOME</a>
     <a href="classicCheese.html">CLASSIC CHEESE</a>
     <a href="banginBBQ.html">BANGIN BBQ</a>
-    <a href="crispyChicken.html">CRISPY CHICKEN</a>
     <a href="plantPowered.html">PLANT POWERED</a>
     <a href="inferno.html">INFERNO</a>
     <a href="mediterranean.html">MEDITERRANEAN</a>
   </div>
 </div>
 
-<div id="backgroundImage"></div>
+<script>
+  var nav_on = false;
+  
+  function myFunction() {
 
-<div id="aboutUs">
-  <h2>ABOUT US</h2>
-  <p>Welcome to our website, the ultimate destination for burger lovers! Our website was created with the mission of providing our users with a wide range of delicious and easy-to-make burger recipes that will take their taste buds on a culinary journey.</p>
-  <p>We understand that burgers are a beloved food around the world, and we want to help our users discover new and exciting ways to enjoy them. Our team of experienced chefs and food enthusiasts have curated a collection of burger recipes that showcase the very best of local and international ingredients and flavors.</p>
-  <p>From classic beef burgers to vegan and vegetarian options, we have something for everyone. Each recipe has been tested and perfected in our kitchen, so you can be sure that your burgers will turn out perfectly every time.</p>
-  <p>We believe that cooking should be fun and accessible to everyone, which is why we've made our website easy to navigate and use. Whether you're a seasoned home cook or a beginner, our recipes will guide you every step of the way.</p>
+    var a = document.getElementById("myLinks");
+
+    while (1==1){
+      if (nav_on == true) {
+        a.style.display = "none";
+        nav_on = false;
+        break;
+      }
+      if (nav_on == false) {
+        a.style.display = "block";
+        nav_on = true;
+        break;
+      }
+    }
+  } 
+</script>
+
+<div id="flex-container2">
+    <div id="backgroundImageCrispyChicken"></div>
+    <div id="ingredients">
+        <h2 id="burgerName">Crispy Chicken</h2>
+        <h2>INGREDIENTS</h2>
+        <ul>
+          <li>1 boneless, skinless chicken breast</li>
+          <li>1 hamburger bun</li>
+          <li>1 tablespoon mayonnaise</li>
+          <li>1 lettuce leaf</li>
+          <li>2-3 slices of red onion</li>
+          <li>Salt and pepper, to taste</li>
+          <li>Optional: sliced tomato or pickles</li>
+        </ul>
+    </div>
+</div>
+
+<div id="method">
+  <h2>METHOD</h2>
+  <ol>
+    <li>Preheat your grill or stovetop grill pan to medium-high heat.</li>
+    <li>Season the chicken breast with salt and pepper.</li>
+    <li>Grill the chicken breast for 6-7 minutes on each side, or until it is cooked through.</li>
+    <li>While the chicken is cooking, toast the hamburger bun on the grill or in a toaster until it is lightly browned.</li>
+    <li>Spread mayonnaise on both halves of the bun.</li>
+    <li>Place a lettuce leaf on the bottom half of the bun.</li>
+    <li>Add the cooked chicken breast on top of the lettuce.</li>
+    <li>Top the chicken with a few slices of red onion.</li>
+    <li>Add any additional toppings, such as sliced tomato or pickles, if desired.</li>
+    <li>Finish the burger by placing the top half of the bun on top.</li>
+    <li>Serve immediately and enjoy your delicious chicken burger with lettuce, mayo, and red onion!</li>
+    <li>Note: You can also cook the chicken in a skillet or bake it in the oven if you don't have a grill or grill pan.</li>
+  </ol>
 </div>
 
 <div id="socials">
@@ -90,9 +133,5 @@
     <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
   </ul>
 </div>
-
-<script src="JS/burgerClick.js"></script>
-
-<script src="JS/scroll.js">S</script>
 </body>
 </html>
