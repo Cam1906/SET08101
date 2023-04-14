@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/ico" href="../IMAGE/favicon.ico"/>
+    <title>GRAB A BYTE | CRISPY CHICKEN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/snap.svg/0.5.1/snap.svg-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/recipe_style_default.css">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="../CSS/recipe_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gajraj One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <script src="../JS/searchbar.js"></script>
+    <script>
+      function darkMode(){  
+        if (localStorage.getItem("mode") === "dark") {
+          document.getElementById('pagestyle').setAttribute('href', '../CSS/recipe_style_darkmode.css');
+        }
+
+        else {
+          document.getElementById('pagestyle').setAttribute('href', '../CSS/recipe_style.css'); 
+        }
+      }
+    </script>     
+  </head>
+<body id="body" onload="darkMode()">
+
+<div id="flex-container">
+  <div id="box-container">
+    <div class="box1">
+      <a href="#" class="burgericon" id="burgericon" onclick="myFunction()">
+        <i class="fa-solid fa-burger fa-2x"></i>
+      </a>
+    </div>
+    <div class="box2">
+      <h1 id="h1">GRAB A BYTE</h1>
+    </div>
+    <div class="box3">
+      <div class="search" id="search">
+        <svg class="search-svg" viewBox="0 0 320 70"
+             data-init="M160,3 L160,3 a27,27 0 0,1 0,54 L160,57 a27,27 0 0,1 0,-54 M197,67 181.21,51.21"
+             data-mid="M160,3 L160,3 a27,27 0 0,1 0,54 L160,57 a27,27 0 0,1 0,-54 M179.5,49.5 179.5,49.5"
+             data-active="M27,3 L293,3 a27,27 0 0,1 0,54 L27,57 a27,27 0 0,1 0,-54 M179.5,49.5 179.5,49.5">
+          <path class="search-svg__path"  id="search-svg__path" d="M160,3 L160,3 a27,27 0 0,1 0,54 L160,57 a27,27 0 0,1 0,-54 M197,67 181.21,51.21" />
+        </svg>
+        <form>
+          <input type="text" class="search-input" id="search-input"/>
+        </form>
+        <script src="../JS/searchInput.js"></script>
+        <div class="search-close" id="search-close"></div>
+      </div>
+    </div>
+    <div class="box4">
+      <a href="Settings.html" class="gearicon" id="gearicon">
+        <i class="fa-solid fa-gears fa-2x"></i>
+      </a>
+    </div>
+  </div>
+  <div id="myLinks">
+    <a href="index.html">HOME</a>
+    <a href="ClassicCheese.html">CLASSIC CHEESE</a>
+    <a href="BanginBBQ.html">BANGIN BBQ</a>
+    <a href="PlantPowered.html">PLANT POWERED</a>
+    <a href="Inferno.html">INFERNO</a>
+    <a href="Mediterranean.html">MEDITERRANEAN</a>
+  </div>
+</div>
+
+<script>
+  var nav_on = false;
+  
+  function myFunction() {
+
+    var a = document.getElementById("myLinks");
+
+    while (1==1){
+      if (nav_on == true) {
+        a.style.display = "none";
+        nav_on = false;
+        break;
+      }
+      if (nav_on == false) {
+        a.style.display = "block";
+        nav_on = true;
+        break;
+      }
+    }
+  } 
+</script>
+
+<div id="flex-container2">
+    <div id="backgroundImageCrispyChicken"></div>
+    <div id="ingredients">
+        <h2 id="burgerName">Crispy Chicken</h2>
+        <h2>INGREDIENTS</h2>
+        <ul>
+          <li>1 boneless, skinless chicken breast</li>
+          <li>1 hamburger bun</li>
+          <li>1 tablespoon mayonnaise</li>
+          <li>1 lettuce leaf</li>
+          <li>2-3 slices of red onion</li>
+          <li>Salt and pepper, to taste</li>
+          <li>Optional: sliced tomato or pickles</li>
+        </ul>
+    </div>
+</div>
+
+<div id="method">
+  <h2>METHOD</h2>
+  <ol>
+    <li>Preheat your grill or stovetop grill pan to medium-high heat.</li>
+    <li>Season the chicken breast with salt and pepper.</li>
+    <li>Grill the chicken breast for 6-7 minutes on each side, or until it is cooked through.</li>
+    <li>While the chicken is cooking, toast the hamburger bun on the grill or in a toaster until it is lightly browned.</li>
+    <li>Spread mayonnaise on both halves of the bun.</li>
+    <li>Place a lettuce leaf on the bottom half of the bun.</li>
+    <li>Add the cooked chicken breast on top of the lettuce.</li>
+    <li>Top the chicken with a few slices of red onion.</li>
+    <li>Add any additional toppings, such as sliced tomato or pickles, if desired.</li>
+    <li>Finish the burger by placing the top half of the bun on top.</li>
+    <li>Serve immediately and enjoy your delicious chicken burger with lettuce, mayo, and red onion!</li>
+    <li>Note: You can also cook the chicken in a skillet or bake it in the oven if you don't have a grill or grill pan.</li>
+  </ol>
+</div>
+
+<div id="socials">
+  <ul>
+    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+  </ul>
+</div>
+</body>
+</html>
