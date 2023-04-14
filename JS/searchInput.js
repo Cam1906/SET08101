@@ -16,22 +16,22 @@ function checkKeyword() {
     var keywords_mediterranean = ["mediterranean", "greek", "lamb", "Hummus", "sweetcorn", "zucchini"];
     
     if (keywords_cheese.includes(input)) {
-        window.location.href = "../SET08101/ClassicCheese.html";
+        window.location.href = "ClassicCheese.html";
     }
     else if (keywords_bbq.includes(input)) {
-        window.location.href = "../SET08101/BanginBBQ.html";
+        window.location.href = "BanginBBQ.html";
     }
     else if (keywords_chicken.includes(input)) {
-        window.location.href = "../SET08101/CrispyChicken.html";
+        window.location.href = "CrispyChicken.html";
     }
     else if (keywords_plant.includes(input)) {
-        window.location.href = "../SET08101/PlantPowered.html";
+        window.location.href = "PlantPowered.html";
     }
     else if (keywords_inferno.includes(input)) {
-        window.location.href = "../SET08101/Inferno.html";
+        window.location.href = "Inferno.html";
     }
     else if (keywords_mediterranean.includes(input)) {
-        window.location.href = "../SET08101/Mediterranean.html";
+        window.location.href = "Mediterranean.html";
     } 
     else {
         alert("No match found");
