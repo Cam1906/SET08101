@@ -19,19 +19,19 @@ function checkKeyword() {
         window.location.href = "https://cam1906.github.io/SET08101/ClassicCheese.html";
     }
     else if (keywords_bbq.includes(input)) {
-        window.location.href = "BanginBBQ.html";
+        window.location.href = "https://cam1906.github.io/SET08101/BanginBBQ.html";
     }
     else if (keywords_chicken.includes(input)) {
-        window.location.href = "CrispyChicken.html";
+        window.location.href = "https://cam1906.github.io/SET08101/CrispyChicken.html";
     }
     else if (keywords_plant.includes(input)) {
-        window.location.href = "PlantPowered.html";
+        window.location.href = "https://cam1906.github.io/SET08101/PlantPowered.html";
     }
     else if (keywords_inferno.includes(input)) {
-        window.location.href = "Inferno.html";
+        window.location.href = "https://cam1906.github.io/SET08101/Inferno.html";
     }
     else if (keywords_mediterranean.includes(input)) {
-        window.location.href = "Mediterranean.html";
+        window.location.href = "https://cam1906.github.io/SET08101/Mediterranean.html";
     } 
     else {
         alert("No match found");
