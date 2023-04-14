@@ -16,7 +16,7 @@ function checkKeyword() {
     var keywords_mediterranean = ["mediterranean", "greek", "lamb", "Hummus", "sweetcorn", "zucchini"];
     
     if (keywords_cheese.includes(input)) {
-        window.location.href = "ClassicCheese.html";
+        window.location.href = "https://cam1906.github.io/SET08101/ClassicCheese.html";
     }
     else if (keywords_bbq.includes(input)) {
         window.location.href = "BanginBBQ.html";
