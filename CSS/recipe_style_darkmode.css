@@ -1,0 +1,64 @@
+#body{
+    background-color: #1a1a1a;
+    color: white;
+}
+
+#flex-container h1{
+    color: white;
+}
+
+#flex-container #myLinks {
+    background-color: #333;
+    color:black;
+}
+
+#flex-container #myLinks a {
+    color: black;
+}
+
+#flex-container #myLinks a:hover {
+    background-color: black;
+    color: white;
+}
+
+#box-container{
+    background-color: black;
+    color:white;
+    border-bottom: 5px solid white;
+}
+
+#box-container h1{
+    color: white;
+}
+
+#box-container i{
+    color: white;
+}
+
+#method{
+    color: white;
+    background-color: #1a1a1a;
+}
+
+#method h2{
+    font-family: "Gajraj One";
+}
+
+/* Social Media Icons */
+
+#socials ul li a .fa
+{
+    color: #969696;
+}
+
+/* Search bar */
+.search-svg__path {
+    stroke: white;
+}
+.search-input {
+    color: white;
+}
+
+.search-close:before, .search-close:after {
+    background: white;
+}
