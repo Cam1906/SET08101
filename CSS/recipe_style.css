@@ -1,0 +1,57 @@
+#body{
+    background-color: white;
+}
+
+#flex-container h1{
+    color: white;
+}
+
+#flex-container #myLinks {
+    background-color: #333;
+    color:white;
+
+}
+
+#flex-container #myLinks a {
+    color: white;
+}
+
+#flex-container #myLinks a:hover {
+    background-color: white;
+    color: black;
+}
+
+#box-container{
+    background-color: white;
+    color:black;
+}
+
+#box-container h1{
+    color: black;
+}
+
+#box-container i{
+    color: black;
+}
+
+#method{
+    background-color: white;
+}
+
+#socials ul li a .fa
+{
+    color: #222;
+}
+
+/* Search bar */
+
+.search-svg__path {
+    stroke: black;
+}
+.search-input {
+    color: black;
+}
+
+.search-close:before, .search-close:after {
+    background: black;
+}
