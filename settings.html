@@ -76,23 +76,6 @@
             } else {
                 setMode("dark");
             }
-        
-        // Add mode parameter to link to other page
-        const currentUrl = new URL(window.location.href);
-        const otherPageLink = document.getElementById("index.html");
-        otherPageLink.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
-        const otherPageLink2 = document.getElementById("classicCheese.html");
-        otherPageLink2.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
-        const otherPageLink3 = document.getElementById("banginBBQ.html");
-        otherPageLink3.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
-        const otherPageLink4 = document.getElementById("crispyChicken.html");
-        otherPageLink4.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
-        const otherPageLink5 = document.getElementById("plantPowered.html");
-        otherPageLink5.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
-        const otherPageLink6 = document.getElementById("inferno.html");
-        otherPageLink6.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
-        const otherPageLink7 = document.getElementById("mediterranean.html");
-        otherPageLink7.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
         });
     </script>
 </body>
