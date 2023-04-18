@@ -15,7 +15,7 @@
     <div id="flex-container">
         <div id="box-container">
             <div class="box1">
-                <i class="fa-solid fa-arrow-left" onclick="history.back()"></i>
+                <i class="fa-solid fa-arrow-left" onclick="backFunction()"></i>
             </div>
             <div class="box2">
                 <h1 id="h1">GRAB A BYTE</h1>
@@ -94,6 +94,30 @@
         const otherPageLink7 = document.getElementById("mediterranean.html");
         otherPageLink7.href = currentUrl.pathname + "?mode=" + localStorage.getItem("mode");
         });
+    </script>
+    <script>
+        
+        function backFunction(){
+            document.cookie = "prevPage=" + encodeURIComponent(window.location.href) + "; expires=" + new Date().getTime() + 60 * 1000;
+
+            // Call history.back()
+            history.back();
+
+            // Add event listener to window
+            window.addEventListener('popstate', function(event) {
+            // Read the cookie to get the previous URL and timestamp
+            var cookie = document.cookie.match(/prevPage=([^;]+)/);
+            if (cookie) {
+                var prevUrl = decodeURIComponent(cookie[1]);
+                var prevTimestamp = parseInt(cookie[2], 10);
+                // Check if the timestamp is recent enough to refresh the page
+                if (new Date().getTime() - prevTimestamp < 60 * 1000) {
+                // Reload the previous page
+                window.location.href = prevUrl;
+                }
+            }
+            });
+        }
     </script>
 </body>
 </html>
