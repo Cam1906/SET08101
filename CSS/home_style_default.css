@@ -76,7 +76,6 @@
 }
 
 #aboutUs{
-    position: absolute;
     height: 86%;
     width: 100%;
     padding: 2.5%;
@@ -99,7 +98,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40%;
+    margin-top: 7.5%;
 }
 
 #socials ul
