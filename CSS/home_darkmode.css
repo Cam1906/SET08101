@@ -1,6 +1,11 @@
+/* Author - Cameron Donnelly 40533520 */
+/* This CSS file changes the colour of the home page to the dark mode alternative.*/
+
 #body{
     background-color: #1a1a1a;
 }
+
+/* Header */
 
 #flex-container h1{
     color: white;
@@ -19,6 +24,8 @@
     color: black;
 }
 
+/* Header Hover Effect */
+
 #flex-container #myLinks a:hover {
     background-color: black;
     color: white;
@@ -29,6 +36,8 @@
     color: white;
     border-bottom: 5px solid white;
 }
+
+/* Abouts Us */
 
 #aboutUs{
     color: white;

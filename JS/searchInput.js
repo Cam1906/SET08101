@@ -1,3 +1,6 @@
+/* Author - Cameron Donnelly 40533520 */
+/* This script file checks the input of the search bar and redirects the user to the appropriate page.*/
+
 var input = document.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
       event.preventDefault();

@@ -1,3 +1,6 @@
+/* Author - Cameron Donnelly 40533520 */
+/* This CSS file changes the position of the recipe pages and creates the overall structure.*/
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +10,8 @@
 #body{
     height: 200%;
 }
+
+/* Header */
 
 #flex-container h1{
     font-family: "Gajraj One";
@@ -69,6 +74,8 @@
     display: flex;
 }
 
+/* Background Image */
+
 #backgroundImageCheese{
     width: 50%;
     height: 100vh;
@@ -124,6 +131,7 @@
     border-right: 5px solid;
 }
 
+/* Ingredients */
 
 #ingredients{
     width: 50%;
@@ -145,6 +153,8 @@
     margin: 5% 0 0 2.5%;
     font-family: "Poppins";
 }
+
+/* Method */
 
 #method{
     position: relative;
@@ -168,7 +178,7 @@
     margin: 1.25% 0 0 0;
 }
 
-/* Social Media Icons */
+/* Social Media Icons - https://codepen.io/OfigenusMaximus/pen/yLKOpqb */
 
 #socials{
     display: flex;
@@ -251,7 +261,7 @@
     height: 100%;
 }
 
-/* Search bar */
+/* Search bar - https://codepen.io/OfigenusMaximus/pen/zYWoQoz*/
 
 svg {
     overflow: visible;

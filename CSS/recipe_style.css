@@ -1,6 +1,11 @@
+/* Author - Cameron Donnelly 40533520 */
+/* This CSS file changes the colour of the recipe pages to the light mode alternative.*/
+
 #body{
     background-color: white;
 }
+
+/* Header */
 
 #flex-container h1{
     color: white;
@@ -34,9 +39,13 @@
     color: black;
 }
 
+/* About Us */
+
 #method{
     background-color: white;
 }
+
+/* Social Media Icons */
 
 #socials ul li a .fa
 {

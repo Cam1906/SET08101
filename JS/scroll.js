@@ -1,3 +1,6 @@
+/* Author - Cameron Donnelly 40533520 */
+/* This script file changes the colour of the items in the header when the users scrolls down from the original position of the page.*/
+
 const docElement = document.documentElement;
 
 window.addEventListener('scroll', scrollSelector);

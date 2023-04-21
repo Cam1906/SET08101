@@ -1,3 +1,7 @@
+/* Author - Cameron Donnelly 40533520 */
+/* This script file creates the animation of the search bar.*/
+/* Reference - https://codepen.io/OfigenusMaximus/pen/zYWoQoz */
+
 $(document).ready(function() {
 
     var $search = $(".search"),

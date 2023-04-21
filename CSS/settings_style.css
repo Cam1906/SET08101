@@ -1,3 +1,6 @@
+/* Author - Cameron Donnelly 40533520 */
+/* This CSS file is for the settings page, providing both structure and colour.*/
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +13,8 @@ body{
     min-height: 100vh;
     transition: background-color 2s ease;
 }
+
+/* Header */
 
 #flex-container h1{
     font-family: "Gajraj One";
@@ -51,6 +56,8 @@ h2{
     transform: translate(-50%, -50%);
 
 }
+
+/* Toggle Switch  -  https://www.youtube.com/watch?v=et7lvZOwAvI*/
 
 #dm-toggle-switch{
     position: absolute;

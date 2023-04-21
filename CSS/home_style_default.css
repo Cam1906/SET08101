@@ -1,3 +1,6 @@
+/* Author - Cameron Donnelly 40533520 */
+/* This CSS file changes the position of the home page and creates the overall structure.*/
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +10,8 @@
 #body{
     height: 200%;
 }
+
+/* Header */
 
 #flex-container h1{
     font-family: "Gajraj One";
@@ -57,6 +62,8 @@
     padding: 5.5%;
 }
 
+/* Header Hover Effect */
+
 #flex-container #myLinks a:hover {
     font-weight: bold;
 }
@@ -64,6 +71,8 @@
 #box-container:hover{
     background-color:black;
 }
+
+/* Background Image */
 
 #backgroundImage{
     width: 100%;
@@ -74,6 +83,8 @@
     background-attachment: fixed;
     background-position: center bottom;
 }
+
+/* About Us */
 
 #aboutUs{
     height: 86%;
@@ -92,7 +103,7 @@
     font-size: 15px;
 }
 
-/* Social Media Icons */
+/* Social Media Icons - https://codepen.io/OfigenusMaximus/pen/yLKOpqb */
 
 #socials{
     display: flex;
@@ -174,7 +185,7 @@
     height: 100%;
 }
 
-/* Search bar */
+/* Search bar  https://codepen.io/OfigenusMaximus/pen/zYWoQoz*/
 
 svg {
     overflow: visible;

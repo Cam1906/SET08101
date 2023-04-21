@@ -1,3 +1,6 @@
+/* Author - Cameron Donnelly 40533520 */
+/* This script file changes the colour of the items in the header when the drop down nav bar is used.*/
+
 var nav_on = false;
 
 function burgerClickSelector(){
@@ -38,7 +41,7 @@ function burgerClick() {
       f.style = css5;
       g.style = css2;
 
-      searchCloseStyle.innerHTML = ".search-close:before, .search-close:after {background: black;}";
+      searchCloseStyle.innerHTML = ".search-close:before, .search-close:after {background: white;}";
       nav_on = false;
       break;
     }
